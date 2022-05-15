@@ -4,4 +4,4 @@ get-process | ? name -match '^git+' | ForEach-Object $_.id {
      $a = $_.id   
     }
 }
-$a
+#$a
