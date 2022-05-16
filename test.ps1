@@ -5,4 +5,4 @@ get-process | ? name -match '^fire+' | ForEach-Object $_.id {
      $b = $_.Name  
     }
 }
-write-host $b "   " $a | Format-Wide
+write-host $b "   " $a | Format-Table
