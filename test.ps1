@@ -5,5 +5,5 @@ get-process | Where-Object name -match '^fire+' | ForEach-Object $_.id {
      $b = $_.Name  
     }
 }
-$b = $b+0
+$b = $b+ " "
 write-host $b "   " $a | Format-Table
