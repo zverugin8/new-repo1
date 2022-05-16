@@ -1,7 +1,8 @@
 $a=0
-get-process | ? name -match '^git+' | ForEach-Object $_.id {
+get-process | ? name -match '^fire+' | ForEach-Object $_.id {
     if ($a -le $_.id) {
-     $a = $_.id   
+     $a = $_.id 
+     $b = $_.Name  
     }
 }
-$a | Format-Wide
+write-host $b "   " $a | Format-Wide
