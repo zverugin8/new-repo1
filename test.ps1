@@ -8,3 +8,4 @@ get-process | Where-Object name -match '^fire+' | ForEach-Object $_.id {
 $b = $b+ " "
 write-host $b "   " $a | Format-Table
 get-help Add-Content
+get-help get-process
