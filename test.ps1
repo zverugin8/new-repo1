@@ -6,7 +6,7 @@ get-process | Where-Object name -match '^fire+' | ForEach-Object $_.id {
     }
 }
 $b = $b+ " "
-write-host $b "   " $a | Format-Table
+write-host -ForegroundColor blue $b "   " $a | Format-Table
  get-process|get-member
 
 
